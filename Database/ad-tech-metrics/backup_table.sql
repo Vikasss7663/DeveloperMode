@@ -1,0 +1,1 @@
+create table web_pixel_metrics_backup_2023_01_09 as select * from web_pixel_metrics;

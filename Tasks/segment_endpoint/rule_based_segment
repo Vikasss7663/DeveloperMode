@@ -1,0 +1,18 @@
+curl --location --request POST 'http://localhost:8080/admin/segments/create' \
+--header 'Authorization: client_token:f7e9195e-bc92-4eea-9197-5cd355786200' \
+--header 'client-id: admanager_stg' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "advertiserId":1483,
+    "uuid": 1692,
+    "featureName":"ML_Segments_test_A5",
+    "name":"ML Segments test N8",
+    "displayName":"ML Segments test_A5",
+    "description":"Lookalike bucket segment",
+    "categoryId":14,
+    "subCategoryId":1,
+    "creationType":"RULE_BASED",
+    "objective": "CLICK",
+    "type": "GLOBAL",
+    "expression": "{\"op\":\"OR\",\"type\":\"bool\",\"operands\":[{\"op\":\"AND\",\"type\":\"bool\",\"operands\":[{\"op\":\"=\",\"operands\":[\"state\",\"rajasthan\"],\"dataType\":\"string\"}]}]}"
+}
